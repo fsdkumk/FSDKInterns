@@ -10,7 +10,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Database connection
-include 'db_connect.php';
+include("db_connect.php");
 
 // Query to fetch form_name only
 $query = "SELECT form_name FROM before_li ORDER BY id DESC";

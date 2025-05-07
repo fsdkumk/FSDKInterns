@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 
 // Database connection
-include 'db_connect.php';
+include("db_connect.php");
 
 // Get form name from request
 $form_name = isset($_GET['form_name']) ? trim($_GET['form_name']) : '';

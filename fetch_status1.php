@@ -1,8 +1,7 @@
 <?php
 session_start();
 header('Content-Type: application/json');
-
-$conn = new mysqli("localhost", "root", "", "fsdk");
+include("db_connect.php");
 
 if ($conn->connect_error) {
     echo json_encode(['error' => 'Database connection failed']);

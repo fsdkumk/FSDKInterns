@@ -10,7 +10,7 @@ $password = $_POST['password'] ?? '';
 $phone = $_POST['phone'] ?? '';
 
 // Connect to DB
-include 'db_connect.php';
+include("db_connect.php");
 
 // Check existing phone/password
 $stmt = $conn->prepare("SELECT phone, password FROM users WHERE email = ?");

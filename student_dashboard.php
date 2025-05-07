@@ -1,5 +1,7 @@
 <?php
 session_start();
+// 3) Connect to database
+include("db_connect.php");
 
 // 1) Ensure only students can access
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
@@ -11,9 +13,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
 $error   = $_SESSION['error']   ?? '';
 $success = $_SESSION['success'] ?? '';
 unset($_SESSION['error'], $_SESSION['success']);
-
-// 3) Connect to database
-include 'db_connect.php';
 
 // 4) Fetch full student info (name + email)
 $email = $_SESSION['email'];

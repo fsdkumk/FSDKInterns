@@ -20,11 +20,8 @@ if ($new !== $confirm) {
 }
 
 // 3) Connect to database
-$conn = new mysqli("localhost","root","","fsdk");
-if ($conn->connect_error) {
-    echo json_encode(['status'=>'error','message'=>'DB connection failed.']);
-    exit;
-}
+// ✅ Use centralized DB connection
+include("db_connect.php"); // <-- this links to your db_connect.php
 
 // 4) Fetch stored password
 $stmt = $conn->prepare("

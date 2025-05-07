@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include("db_connect.php");
 
 // Retrieve the lecturer name from the URL query string
 $lecturerName = isset($_GET['lecturer']) ? $_GET['lecturer'] : 'Unknown Lecturer';

@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 
 // Database connection
-include 'db_connect.php';
+include("db_connect.php");
 
 // Count students for each status
 $query = "SELECT status, COUNT(*) as count FROM students GROUP BY status";

@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Ensure database connection
+include("db_connect.php"); // Ensure database connection
 
 // Get the student ID from the URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {

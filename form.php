@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include("db_connect.php");
 
 // Check connection
 if ($conn->connect_error) {

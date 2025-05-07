@@ -9,7 +9,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
 }
 
 // 2) Connect to your database
-include 'db_connect.php';
+include("db_connect.php");
 
 // Use the student's name from session if it exists:
     $student_email = $_SESSION['email'] ?? '';

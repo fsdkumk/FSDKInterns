@@ -6,7 +6,7 @@ if ($_SESSION['role'] != 'lecturer') {
 }
 
 // ---[ STEP 1: DATABASE CONNECTION ]---
-include 'db_connect.php';
+include("db_connect.php");
 
 $lecturerName = $_SESSION['name'];
 

@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php';
+include("db_connect.php");
 
 // CSV IMPORT HANDLING for Lecturers
 if (isset($_POST['import_csv_lecturer'])) {

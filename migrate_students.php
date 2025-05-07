@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Ensure database connection is included
+include("db_connect.php"); // Ensure database connection is included
 
 // Fetch all emails from students table
 $sql = "SELECT DISTINCT email FROM students WHERE email IS NOT NULL AND email <> ''";

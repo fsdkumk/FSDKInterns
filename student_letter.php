@@ -13,7 +13,7 @@ $success = $_SESSION['success'] ?? '';
 unset($_SESSION['error'], $_SESSION['success']);
 
 // 3) Connect to database
-include 'db_connect.php';
+include("db_connect.php");
 
 // 4) Fetch the student’s display name
 $email = $_SESSION['email'];
@@ -27,6 +27,10 @@ if ($stmt->fetch()) {
   $_SESSION['student_name'] = $student_name;
 }
 $stmt->close();
+
+// Fetch letters
+$sql = "SELECT * FROM letters ORDER BY id ASC";
+$result = $conn->query($sql);
 
 // 5) Close the connection
 $conn->close();
@@ -703,16 +707,6 @@ html, body {
 <!-- Letters List  -->
 <div class="letter-list mt-4">
 <?php
-// Connect again to database
-$conn = new mysqli("localhost", "root", "", "fsdk");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Fetch letters
-$sql = "SELECT * FROM letters ORDER BY id ASC";
-$result = $conn->query($sql);
-
 if ($result->num_rows > 0) {
     $counter = 1;
     while($row = $result->fetch_assoc()) {

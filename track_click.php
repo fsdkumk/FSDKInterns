@@ -3,7 +3,7 @@ session_start();
 header("Content-Type: application/json");
 
 // Database connection
-include 'db_connect.php';
+include("db_connect.php");
 
 // Check if student is logged in
 if (!isset($_SESSION['email'])) {

@@ -7,7 +7,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
 }
 
 // Database connection
-include 'db_connect.php';
+include("db_connect.php");
 
 // Check connection
 if ($conn->connect_error) {

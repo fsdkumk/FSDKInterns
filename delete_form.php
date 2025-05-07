@@ -1,6 +1,6 @@
 <?php
 session_start(); // Ensure session starts
-include 'db_connect.php';
+include("db_connect.php");
 
 // Check if the user is an admin
 if (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] !== true) {

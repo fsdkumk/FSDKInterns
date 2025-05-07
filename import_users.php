@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Make sure this file connects to your DB
+include("db_connect.php"); // Make sure this file connects to your DB
 
 if (isset($_POST['import_csv'])) {
     $fileName = $_FILES['csv_file']['tmp_name'];

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_connect.php';
+include("db_connect.php");
 
 if (isset($_POST["delete_id"])) {
   $id = intval($_POST["delete_id"]);

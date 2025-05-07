@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Ensure database connection
+include("db_connect.php"); // Ensure database connection
 
 // CSV IMPORT HANDLING
 // ------------------------------
