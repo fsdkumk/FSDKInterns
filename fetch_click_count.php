@@ -2,16 +2,7 @@
 header("Content-Type: application/json");
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Database connection failed: " . $conn->connect_error]));
-}
+include 'db_connect.php';
 
 // Get form name from request
 $form_name = isset($_GET['form_name']) ? trim($_GET['form_name']) : '';

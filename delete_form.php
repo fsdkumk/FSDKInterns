@@ -1,22 +1,10 @@
 <?php
-
 session_start(); // Ensure session starts
+include 'db_connect.php';
 
 // Check if the user is an admin
 if (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] !== true) {
     echo json_encode(["status" => "error", "message" => "Unauthorized action."]);
-    exit();
-}
-
-// Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    echo json_encode(["status" => "error", "message" => "Database connection failed."]);
     exit();
 }
 

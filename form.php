@@ -1,11 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'db_connect.php';
 
 // Check connection
 if ($conn->connect_error) {

@@ -9,16 +9,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
 }
 
 // 2) Connect to your database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    echo json_encode(['status' => 'error', 'message' => 'Database connection failed: '.$conn->connect_error]);
-    exit();
-}
+include 'db_connect.php';
 
 // Use the student's name from session if it exists:
     $student_email = $_SESSION['email'] ?? '';

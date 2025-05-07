@@ -1,14 +1,6 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Database connection failed"]));
-}
+include 'db_connect.php';
 
 if (!isset($_SESSION['student_id'])) {
     die(json_encode(["status" => "error", "message" => "User not logged in"]));

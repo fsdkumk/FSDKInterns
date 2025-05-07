@@ -6,15 +6,7 @@ if ($_SESSION['role'] != 'lecturer') {
 }
 
 // Database connection
-$servername = "localhost";
-$username   = "root";
-$password   = "";
-$dbname     = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'db_connect.php';
 
 $lecturerName = $_SESSION['name'];
 

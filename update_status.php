@@ -3,17 +3,7 @@ session_start();
 header("Content-Type: application/json");
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    echo json_encode(["status" => "error", "message" => "Database connection failed: " . $conn->connect_error]);
-    exit();
-}
+include 'db_connect.php';
 
 // Get the email and new status from the AJAX request
 $email = isset($_POST['email']) ? trim($_POST['email']) : '';

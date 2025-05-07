@@ -10,11 +10,7 @@ $password = $_POST['password'] ?? '';
 $phone = $_POST['phone'] ?? '';
 
 // Connect to DB
-$conn = new mysqli("localhost", "root", "", "fsdk");
-if ($conn->connect_error) {
-    echo json_encode(['status' => 'error', 'message' => 'Database connection failed.']);
-    exit();
-}
+include 'db_connect.php';
 
 // Check existing phone/password
 $stmt = $conn->prepare("SELECT phone, password FROM users WHERE email = ?");

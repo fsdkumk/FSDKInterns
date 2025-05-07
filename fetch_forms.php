@@ -9,16 +9,7 @@ $isAdmin = isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
 $isStudent = isset($_SESSION['role']) && $_SESSION['role'] === 'student';
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Database connection failed: " . $conn->connect_error);
-}
+include 'db_connect.php';
 
 // Fetch forms
 $query = "SELECT id, form_name, file_path, due_date, button_name, require_upload, redirect_url FROM before_li ORDER BY id DESC";

@@ -2,16 +2,7 @@
 header("Content-Type: application/json");
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Database connection failed: " . $conn->connect_error]));
-}
+include 'db_connect.php';
 
 // Count students for each status
 $query = "SELECT status, COUNT(*) as count FROM students GROUP BY status";

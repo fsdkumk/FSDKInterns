@@ -1,9 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "", "fsdk");
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+include 'db_connect.php';
 
 if (isset($_POST["delete_id"])) {
   $id = intval($_POST["delete_id"]);

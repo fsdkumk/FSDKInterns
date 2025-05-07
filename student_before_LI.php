@@ -7,12 +7,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'student') {
 }
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'db_connect.php';
 
 // Check connection
 if ($conn->connect_error) {

@@ -16,15 +16,7 @@ if (!isset($_POST['form_name']) || empty($_POST['form_name'])) {
 
 $form_name = trim($_POST['form_name']);
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Database connection failed"]));
-}
+include 'db_connect.php';
 
 // Debugging: Print received form_name
 error_log("🔍 Debugging form_name received: " . $form_name);

@@ -3,16 +3,7 @@ session_start();
 header("Content-Type: application/json");
 
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Database connection failed: " . $conn->connect_error]));
-}
+include 'db_connect.php';
 
 // Check if student is logged in
 if (!isset($_SESSION['email'])) {

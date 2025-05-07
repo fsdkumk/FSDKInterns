@@ -13,10 +13,7 @@ $success = $_SESSION['success'] ?? '';
 unset($_SESSION['error'], $_SESSION['success']);
 
 // 3) Connect to database
-$conn = new mysqli("localhost", "root", "", "fsdk");
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+include 'db_connect.php';
 
 // 4) Fetch the student’s display name
 $email = $_SESSION['email'];

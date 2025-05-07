@@ -1,18 +1,10 @@
 <?php
 session_start();
+include 'db_connect.php';
+
 if ($_SESSION['role'] != 'admin') {
     header("Location: login.php");
     exit();
-}
-
-$servername = "localhost";
-$username   = "root";
-$password   = "";
-$dbname     = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Database connection failed: " . $conn->connect_error);
 }
 
 // Get total students

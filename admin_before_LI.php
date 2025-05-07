@@ -1,18 +1,9 @@
 <?php
 session_start();
+include 'db_connect.php';
+
 if (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] !== true) {
     die("Unauthorized access.");
-}
-
-// Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fsdk";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Database connection failed: " . $conn->connect_error]));
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
