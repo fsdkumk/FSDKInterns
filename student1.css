@@ -1,0 +1,290 @@
+/* Light Sea Green Refresh Theme */
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7f5;
+    color: #1e353f;
+}
+
+/* Top Navbar */
+.navbar {
+    background: linear-gradient(145deg, #33d1c9, #1da2a0);
+    color: #ffffff;
+    width: 119%; /* Full width */
+    padding: 15px 20px;
+    margin-left: -120px; /* Negative margin to move it further left */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure it starts from the viewport's very left */
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
+/* Optional: Reduce Gap Between Logo and Button */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce gap to save space */
+}
+
+.navbar .logo-img {
+    width: 70px;
+    height: 80px;
+}
+
+.navbar .logo p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.navbar .logo p.faculty-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* Adjust Menu Position */
+.navbar .menu {
+    list-style: none;
+    margin: 0; /* Remove unnecessary margin */
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items in the center */
+}
+
+/* Adjust Log Out Button Styling */
+.navbar .menu li {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left: 30px; /* Add slight left margin if needed */
+    margin-right: 40px;
+}
+
+.navbar .menu li:hover {
+    background: #e0f7f5;
+    color: #20b2aa;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 40px; /* Prevent overlap with fixed navbar */
+    padding: 20px;
+    background-color: #e0f7f5;
+}
+
+/* Header Section */
+header {
+    background-color: #20b2aa;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.student-table h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #20b2aa; /* Light Sea Green */
+    border-bottom: 2px solid #20b2aa;
+    display: inline-block;
+}
+
+/* Make "Daftar Untuk Menjalani LI" Text Black */
+.student-table ul li a {
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+.student-table ul li a:hover {
+    color: #20b2aa; /* Optional: Change color on hover for better UX */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+/* Modal Content Styling */
+
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #20b2aa;
+    color: white;
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.modal-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.btn-close {
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.modal-body {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1e353f;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f7f7f7;
+}
+
+.modal-footer {
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.modal-footer .btn-primary {
+    background-color: #20b2aa;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #1e7a7a;
+}
+
+/* Add Submission Button */
+#addSubmissionBtn {
+    background-color: #20b2aa;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#addSubmissionBtn:hover {
+    background-color: #1e7a7a; /* Darker shade for hover effect */
+}
+
+/* Submit Button */
+#submissionForm button[type="submit"] {
+    background-color: #20b2aa;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#submissionForm button[type="submit"]:hover {
+    background-color: #1e7a7a; /* Darker shade for hover effect */
+}
+
+#doneButton {
+    background-color: #28a745; /* Bootstrap success green */
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#doneButton:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+
+/* Footer Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container, .main-content {
+    flex: 1;
+}
+
+.footer {
+    background: linear-gradient(145deg, #33d1c9, #1da2a0); /* Light Sea Green gradient */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center content */
+    padding: 10px 0; /* Adjust padding as needed */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between logo and text */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.9; /* Slight transparency for the text */
+}

@@ -1,0 +1,6 @@
+name,email,phone,password,role
+Alice Wonderland,alice@example.com,01340660755,123456,student
+Bob Builder,bob@example.com,01140760755,123456,student
+Charlie Brown,charlie@example.com,01150660755,123456,student
+Diana Prince,diana@example.com,01140660855,123456,student
+Edward Elric,edward@example.com,01440660755,123456,student

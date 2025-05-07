@@ -1,0 +1,482 @@
+/* Light Sea Green Refresh Theme */
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7f5;
+    color: #1e353f;
+}
+
+/* Top Navbar */
+.navbar {
+    background: linear-gradient(145deg, #33d1c9, #1da2a0);
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Reduce Gap Between Logo and Button */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce gap to save space */
+}
+
+.navbar .logo-img {
+    width: 70px;
+    height: 80px;
+}
+
+.navbar .logo p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.navbar .logo p.faculty-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* Adjust Menu Position */
+.navbar .menu {
+    list-style: none;
+    margin: 0; /* Remove unnecessary margin */
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items in the center */
+}
+
+/* Adjust Log Out Button Styling */
+.navbar .menu li {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left: 30px; /* Add slight left margin if needed */
+    margin-right: 40px;
+}
+
+
+.navbar .menu li:hover {
+    background: #e0f7f5;
+    color: #20b2aa;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 110px; /* Prevent overlap with fixed navbar */
+    padding: 20px;
+    background-color: #e0f7f5;
+}
+
+/* Header Section */
+header {
+    background-color: #20b2aa;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.student-table h3 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #20b2aa; /* Light Sea Green */
+    border-bottom: 2px solid #20b2aa;
+    display: inline-block;
+}
+
+.student-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* White table background */
+    color: #1e353f; /* Dark Teal text */
+}
+
+.student-table table th,
+.student-table table td {
+    padding: 15px;
+    border: 1px solid #cdeeea; /* Lightened Sea Green border */
+    font-size: 16px;
+}
+
+.student-table table th {
+    background-color: #20b2aa; /* Table header in Light Sea Green */
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.student-table table td {
+    text-align: center;
+    color: #1e353f; /* Dark Teal text */
+}
+
+.student-table table tr:hover {
+    background-color: #cdeeea; /* Lightened Sea Green hover */
+    transition: all 0.2s ease;
+}
+
+/* Button container to align the button */
+.button-container {
+    text-align: right; /* Align the button to the right */
+    margin-bottom: 15px; /* Add space below the button */
+}
+
+/* Sort Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #20b2aa; /* Match sidebar color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ac2b0; /* Hover effect for button */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 25%;
+    }
+
+    .main-content {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    /* Adjust Name and Matrix column widths */
+    .student-table table th:nth-child(2), /* Name header */
+    .student-table table td:nth-child(2) { /* Name data */
+        width: 40%; /* Wider column for Name */
+    }
+
+    .student-table table th:nth-child(3), /* Matrix header */
+    .student-table table td:nth-child(3) { /* Narrower column for Matrix */
+        width: 20%; /* Narrower column */
+    }
+
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Background overlay */
+    display: flex; /* Flexbox for centering */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* For positioning the close button */
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #20b2aa; /* Light Sea Green */
+}
+
+.modal-content input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #2ac2b0;
+}
+
+/* Close Button Styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa; /* Light gray color */
+    font-size: 24px; /* Larger size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000; /* Change to black on hover */
+}
+
+#addStudentModal {
+    border: 2px solid #2ac2b0;
+}
+table {
+    border: 2px solid blue;
+}
+
+/* Task indicator styles */
+.task-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b6b; /* Red for not done */
+    border-radius: 50%; /* Make it a circle */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* When the task is done */
+.task-indicator.done {
+    background-color: #2ac2b0; /* Green for done */
+}
+
+/* Back to Navbar Button */
+.scroll-to-navbar {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #20b2aa; /* Light Sea Green */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth fade effect */
+    visibility: hidden; /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.scroll-to-navbar:hover {
+    opacity: 1; /* Fully visible when hovered */
+    visibility: visible; /* Ensure visibility */
+}
+
+/* Show button when active */
+.scroll-to-navbar.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sidebar Styling */
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e353f;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden by default */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: left 0.3s ease; /* Smooth slide effect */
+}
+
+.sidebar.active {
+    left: 0; /* Show the sidebar when active */
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #1da2a0;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-toggle i {
+    font-size: 20px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-menu .menu-item {
+    text-decoration: none;
+    color: #cdeeea;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-menu .menu-item:hover {
+    background-color: #20b2aa;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease; /* Smooth content shift */
+}
+
+.main-content.sidebar-active {
+    margin-left: 250px; /* Shift when sidebar is active */
+}
+
+
+/* Footer Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container, .main-content {
+    flex: 1;
+}
+
+.footer {
+    background: linear-gradient(145deg, #33d1c9, #1da2a0); /* Light Sea Green gradient */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center content */
+    padding: 10px 0; /* Adjust padding as needed */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between logo and text */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.9; /* Slight transparency for the text */
+}
