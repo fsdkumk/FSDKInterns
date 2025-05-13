@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2025 at 09:38 AM
+-- Generation Time: May 13, 2025 at 03:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -167,9 +167,6 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`id`, `name`, `matrix`, `email`, `lecturer`, `semester`, `status`) VALUES
 (75, 'NUR FATINI BT NADLAN', '34DDT22F1002', 'tinieynadlan@gmail.com', 'Dr. John Doe', 'FEB 24/25', 'At least get 1 LI'),
-(76, 'Student3', '34DDT22F1003', '34DDT22F1003@example.com', 'Dr. Jane Smith', 'FEB 24/25', 'Haven\'t got any LI yet'),
-(77, 'Student4', '34DDT22F1004', '34DDT22F1004@example.com', 'Dr. Emily Johnson', 'SEP 25/26', 'Haven\'t got any LI yet'),
-(78, 'Student5', '34DDT22F1005', '34DDT22F1005@example.com', 'Dr. Emily Johnson', 'SEP 25/26', 'Haven\'t got any LI yet'),
 (103, 'Alice Wonderland', '34DDT22F1006', 'alice@example.com', 'Dr. John Doe', 'FEB 24/25', 'Already confirmed / decided'),
 (104, 'Bob Builder', '34DDT22F1007', 'bob@example.com', 'Dr. John Doe', 'FEB 24/25', 'Haven\'t got any LI yet'),
 (105, 'Charlie Brown', '34DDT22F1008', 'charlie@example.com', 'Dr. Jane Smith', 'FEB 24/25', 'Haven\'t got any LI yet'),
@@ -227,7 +224,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `role`) VALUES
-(10, '', 'admin@gmail.com', NULL, '1', 'admin'),
+(10, '', 'admin@gmail.com', NULL, 'AdminLI25%#', 'admin'),
 (52, 'tini', 'tinieynadlan@gmail.com', '01340660755', 'dummy1234', 'student'),
 (53, 'Bob Builder', 'bob@example.com', '01140760755', 'bob123', 'student'),
 (54, 'Charlie Brown', 'charlie@example.com', '01150660755', '123456', 'student'),
