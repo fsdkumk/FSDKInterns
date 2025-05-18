@@ -896,7 +896,7 @@ html, body {
         <!-- Main Content -->
         <div class="main-content">
             <header>
-                <h2>Implementation INDUSTRIAL TRAINING</h2>
+                <h2>IMPLEMENTATION INDUSTRIAL TRAINING</h2>
             </header>
 
            <!-- Section 1: Perlaksanaan Sebelum LI -->
