@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2025 at 03:10 AM
+-- Generation Time: May 19, 2025 at 02:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,8 +41,7 @@ CREATE TABLE `announcements` (
 
 INSERT INTO `announcements` (`id`, `title`, `message`, `date`, `created_at`) VALUES
 (2, 'Industry Training Briefing on', 'Attendance is compulsory', '2025-05-23', '2025-05-05 08:41:04'),
-(3, 'Online briefing', 'Must attend', '2025-05-23', '2025-05-05 08:48:10'),
-(4, 'Online Meeting', 'Must attend', '2025-05-24', '2025-05-07 07:36:37');
+(3, 'Online briefing', 'Must attend', '2025-05-23', '2025-05-05 08:48:10');
 
 -- --------------------------------------------------------
 
@@ -69,7 +68,7 @@ INSERT INTO `before_li` (`id`, `form_name`, `file_path`, `due_date`, `created_at
 (167, '4. LI_BUKU LOG HARIAN (Submit setiap Bulan).doc', 'form_67a7f903d16572.80318104.doc', '2025-02-21 08:38:00', '2025-02-08 17:38:27', '', NULL, 'No'),
 (223, '3. LI_BORANG PEMBERITAHUAN (Hari Pertama Latihan Industri)', 'uploads/form_67fca8bdb0aec_3. LI_BORANG PEMBERITAHUAN (Hari Pertama Latihan Industri).doc', '2025-04-24 14:18:00', '2025-04-14 06:18:37', '', '', 'No'),
 (224, '2. LI_BORANG PERAKUAN LEPAS TANGGUNG OLEH PELAJAR KEPADA FAKULTI (Sebelum Latihan Industri)', 'uploads/form_67fca8e6d3f36_2. LI_BORANG PERAKUAN LEPAS TANGGUNG OLEH PELAJAR KEPADA FAKULTI (Sebelum Latihan Industri).doc', '2025-04-19 14:19:00', '2025-04-14 06:19:18', '', '', 'No'),
-(225, '1. LI_BORANG MAKLUM BALAS INDUSTRI NEW (Sebelum Latihan Industri)', 'uploads/form_67fca90cad18e_1. LI_BORANG MAKLUM BALAS INDUSTRI NEW (Sebelum Latihan Industri).doc', '2025-04-25 14:19:00', '2025-04-14 06:19:56', 'fill in', 'http://10.3.244.152/LI/form.php', 'Yes');
+(225, '1. LI_BORANG MAKLUM BALAS INDUSTRI NEW (Sebelum Latihan Industri)', 'uploads/form_67fca90cad18e_1. LI_BORANG MAKLUM BALAS INDUSTRI NEW (Sebelum Latihan Industri).doc', '2025-04-25 14:19:00', '2025-04-14 06:19:56', 'fill in', 'http://localhost/LI/form.php', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -142,8 +141,7 @@ INSERT INTO `letters` (`id`, `letter_name`, `description`, `file_path`) VALUES
 (7, 'dean list umk.docx', 'student dean list', 'uploads/dean list umk.docx'),
 (8, 'BORANG CUTI REHAT.doc', 'cuti', 'uploads/BORANG CUTI REHAT.doc'),
 (11, 'dean list umk.docx', 'gerg', 'uploads/dean list umk.docx'),
-(13, 'BORANG CUTI REHAT.doc', 'vf', 'uploads/BORANG CUTI REHAT.doc'),
-(15, 'BORANG BAYARAN ELAUN PELAJAR PRAKTIKAL.docx', 'ff', 'uploads/BORANG BAYARAN ELAUN PELAJAR PRAKTIKAL.docx');
+(13, 'BORANG CUTI REHAT.doc', 'vf', 'uploads/BORANG CUTI REHAT.doc');
 
 -- --------------------------------------------------------
 
@@ -225,7 +223,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `role`) VALUES
 (10, '', 'admin@gmail.com', NULL, 'AdminLI25%#', 'admin'),
-(52, 'tini', 'tinieynadlan@gmail.com', '01340660755', 'dummy1234', 'student'),
+(52, 'tini', 'tinieynadlan@gmail.com', '01340660755', 'tini123', 'student'),
 (53, 'Bob Builder', 'bob@example.com', '01140760755', 'bob123', 'student'),
 (54, 'Charlie Brown', 'charlie@example.com', '01150660755', '123456', 'student'),
 (55, 'Diana Prince', 'diana@example.com', '01140660855', 'diana123', 'student'),
@@ -313,7 +311,7 @@ ALTER TABLE `letters`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT for table `student_uploads`
@@ -325,7 +323,7 @@ ALTER TABLE `student_uploads`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
