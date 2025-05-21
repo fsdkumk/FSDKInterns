@@ -644,6 +644,7 @@ html, body {
     <div class="collapse" id="studentSubmenu">
         <a href="lecturer_student_list.php" class="collapse-item">Student List</a>
     </div>
+    <a href="usermanual/User_Manual_Lecturer.pdf" download><i class="fas fa-book"></i> User Manual</a>
 </div>
 
 <div class="main-content">

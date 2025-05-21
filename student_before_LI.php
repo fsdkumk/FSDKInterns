@@ -891,6 +891,9 @@ html, body {
     <a href="student_before_LI.php" class="collapse-item active"><i class="fas fa-angle-right"></i> Implementation IT</a>
     <a href="student_letter.php" class="collapse-item"><i class="fas fa-angle-right"></i> Letter</a>
   </div>
+  <a href="usermanual/User_Manual_Student.pdf" download>
+    <i class="fas fa-book"></i> User Manual
+  </a>
 </div>
 
         <!-- Main Content -->
