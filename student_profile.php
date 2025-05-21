@@ -319,7 +319,7 @@ html, body {
         <div class="logo">
             <img src="image/logoumk.png" alt="UMK Logo" class="logo-img">
             <div>
-                <p>UNIVERSITI MALAYSIA KELANTAN</p>
+                <p>Industrial Attachment Management System</p>
                 <p class="faculty-title">FACULTY OF DATA SCIENCE & COMPUTING</p>
             </div>
         </div>

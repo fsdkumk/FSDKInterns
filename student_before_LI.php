@@ -815,7 +815,7 @@ html, body {
       </button>
       <img src="image/logoumk.png" alt="UMK Logo" style="width:65px;height:75px;flex-shrink:0;">
       <div style="flex-shrink:1;">
-        <p style="margin:0;font-size:22px;font-weight:bold;color:#fff;text-transform:uppercase;white-space:nowrap;">UNIVERSITI MALAYSIA KELANTAN</p>
+        <p style="margin:0;font-size:22px;font-weight:bold;color:#fff;text-transform:uppercase;white-space:nowrap;">Industrial Attachment Management System</p>
         <p style="margin:0;font-size:15px;opacity:.8;color:#fff;text-transform:capitalize;white-space:nowrap;">FACULTY OF DATA SCIENCE & COMPUTING</p>
       </div>
     </div>

@@ -660,10 +660,11 @@ html, body {
 }
 
 .hero-overlay h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  margin: 0;
+  margin-top: 400px;
+
 }
 
 .hero-overlay p {
@@ -956,7 +957,7 @@ blockquote {
       </button>
       <img src="image/logoumk.png" alt="UMK Logo" style="width:65px;height:75px;flex-shrink:0;">
       <div style="flex-shrink:1;">
-        <p style="margin:0;font-size:22px;font-weight:bold;color:#fff;text-transform:uppercase;white-space:nowrap;">UNIVERSITI MALAYSIA KELANTAN</p>
+        <p style="margin:0;font-size:22px;font-weight:bold;color:#fff;text-transform:uppercase;white-space:nowrap;">Industrial Attachment Management System</p>
         <p style="margin:0;font-size:15px;opacity:.8;color:#fff;text-transform:capitalize;white-space:nowrap;">FACULTY OF DATA SCIENCE & COMPUTING</p>
       </div>
     </div>
@@ -1019,8 +1020,7 @@ blockquote {
 <!-- Hero Section -->
 <div class="hero-image-section">
   <div class="hero-overlay">
-    <h1>Industrial Training</h1>
-    <p>COMPUTER SCIENCE | FSDK</p>
+    <h1>Industrial Attachment Management System</h1>
   </div>
 <!-- Scroll Button at the Bottom of Dashboard -->
 <a href="#scroll-target" class="scroll-down-btn" style="bottom: 30px;">
