@@ -623,7 +623,7 @@ html, body {
   <!-- Left side: Menu + Logo + Text -->
   <div class="d-flex align-items-center gap-2">
     <button id="sidebarToggle" class="menu-toggle btn btn-link text-white p-0"><i class="fas fa-bars fa-lg"></i></button>
-    <img src="image/logoumk.png" alt="UMK Logo" style="width:70px;height:80px;">
+   <img src="image/iams.png" alt="UMK Logo" style="width:75px;height:80px;flex-shrink:0;">
     <div class="d-flex flex-column justify-content-center">
       <p style="margin:0;font-size:22px;font-weight:bold;color:#fff;text-transform:uppercase;">Industrial Attachment Management System</p>
       <p style="margin:0;font-size:14px;color:#fff;opacity:.8;text-transform:capitalize;">FACULTY OF DATA SCIENCE & COMPUTING</p>

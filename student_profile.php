@@ -317,7 +317,7 @@ html, body {
     <!-- Navbar -->
     <div class="navbar">
         <div class="logo">
-            <img src="image/logoumk.png" alt="UMK Logo" class="logo-img">
+           <img src="image/iams.png" alt="UMK Logo" style="width:70px;height:75px;flex-shrink:0;">
             <div>
                 <p>Industrial Attachment Management System</p>
                 <p class="faculty-title">FACULTY OF DATA SCIENCE & COMPUTING</p>
